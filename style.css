@@ -36,6 +36,10 @@
     margin-bottom: 20px;
 }
 
+#bg-crystal .crystal-txt a:hover {
+    filter: opacity(.5);
+}
+
 
 /* -------------- 2nd Background ----------------- */
 
