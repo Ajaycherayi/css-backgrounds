@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bg-crystal {
+    display: flex;
+    height: 100vh;
+}
+
+#bg-crystal .crystal-txt {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 60px 90px;
+    box-shadow: 1px 5px 20px #9e9d9d69;
+}
+
+#bg-crystal .crystal-txt h5 {
+    color: rgb(4, 7, 10);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#bg-crystal .crystal-txt p {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+
+/* -------------- 2nd Background ----------------- */
+
+#bg-gradient {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg-gradient .txt-gradient h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
