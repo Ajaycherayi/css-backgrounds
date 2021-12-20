@@ -6,12 +6,23 @@
     box-sizing: border-box;
 }
 
-#bg-crystal {
-    display: flex;
-    height: 100vh;
+h5 {
+    color: rgb(4, 7, 10);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-#bg-crystal .crystal-txt {
+p {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    filter: opacity(.5);
+}
+
+.txt-box {
     z-index: 10;
     position: absolute;
     left: 50%;
@@ -24,20 +35,9 @@
     box-shadow: 1px 5px 20px #9e9d9d69;
 }
 
-#bg-crystal .crystal-txt h5 {
-    color: rgb(4, 7, 10);
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-#bg-crystal .crystal-txt p {
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 20px;
-}
-
-#bg-crystal .crystal-txt a:hover {
-    filter: opacity(.5);
+#bg-crystal {
+    display: flex;
+    height: 100vh;
 }
 
 
@@ -49,8 +49,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(-45deg, #3A3985, #5650DE, #6454F0, #7366FF, #7D77FF, #2E8DE1, #8A64EB, #B65EBA, #64E8DE, #7BF2E9, #00FFED, #6EE2F5, #3499FF, #00B8BA, #F869D5, #FF9897, #FFCDA5, #FF5B94, #FF6CAB, #FF9482, #F650A0, #FFCF1B, #FF881B, #FFA62E, #EE4D5F, #EA4D2C, #F00B51, #844144);
+    position: relative;
+    background-size: 2000% 2000%;
+    animation: change 50s ease-in-out infinite;
 }
 
-#bg-gradient .txt-gradient h4 {
-    font-family: 'Roboto Condensed', sans-serif;
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/* -------------- 3rd Background ----------------- */
+
+#bg-particle {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
